@@ -82,6 +82,8 @@ media.getMetadata().addListener((MapChangeListener<String, Object>) change -> {
 }
 ```
 
+**Vous devez ajouter javafx.media aux arguments de lancement de votre projet sans quoi il ne se lancera pas correctement et vous aurez une erreur. Pour modifier la configuration de lancement de votre projet allez dans le menu Run  > Run configurations... > Arguments. Remplacez votre --add-modules par : --add-modules javafx.controls,javafx.fxml,javafx.media**
+
 ### Gestion de la playlist
 
 Pour gérer votre playlist, vous allez utiliser un `TableView`. Il vous permettra de voir les éléments qui sont dans votre playlist et de les supprimer.
